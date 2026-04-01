@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import OrbBackground from "@/components/OrbBackground";
 
 export const metadata: Metadata = {
   title: "もちつきリズム | 2人で餅をつけ！",
@@ -15,7 +16,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
         <meta name="theme-color" content="#1a0a00" />
       </head>
-      <body>{children}</body>
+      <body>
+        <OrbBackground />
+        <div style={{ position: "relative", zIndex: 1 }}>{children}</div>
+      </body>
     </html>
   );
 }
