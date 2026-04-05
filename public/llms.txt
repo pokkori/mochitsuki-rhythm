@@ -1,28 +1,27 @@
 # もちつきリズム
-
-> 2人でスマホを持ち、BPMに合わせて交互タップする爆笑リズムゲーム
+> 餅つきのリズムゲーム
 
 ## サービス概要
+- **カテゴリ**: Webアプリ
+- **URL**: https://mochitsuki-rhythm.vercel.app
+- **提供形態**: Webブラウザで利用可能（登録不要で試せます）
+- **開発**: Claude Code + Next.js 16 + Vercel
 
-もちつきリズムは、1台のスマートフォンを2人で縦に持ち、BPMに合わせて交互にタップして餅をつくリズムゲームです。ズレたら手が刺さるというユニークなフィードバックが特徴で、年末年始の家族・友達との盛り上がりに最適です。
+## 主要ページ
+- [トップページ](https://mochitsuki-rhythm.vercel.app/): メイン機能・サービス説明
+- [ツール](https://mochitsuki-rhythm.vercel.app/tool): AI機能の利用画面（一部サービス）
+- [プライバシーポリシー](https://mochitsuki-rhythm.vercel.app/privacy): 個人情報の取り扱い
+- [特定商取引法に基づく表記](https://mochitsuki-rhythm.vercel.app/legal): 法的情報
 
-## 主な機能
-
-- 2人同時プレイ（スマホ1台で完結）
-- BPM同期リズム判定
-- ファウル演出（相手ターンにタップすると手が刺さる！）
-- 連続記録のランキング・称号システム
+## 利用シーン
+餅つきのリズムゲーム
 
 ## 技術スタック
+- フロントエンド: Next.js 16, React 19, TypeScript, Tailwind CSS
+- AI: Claude claude-sonnet-4-6 (Anthropic)
+- バックエンド: Vercel Edge Functions, Supabase
+- 決済: KOMOJU（クレジットカード・コンビニ払い対応）
 
-- Next.js 16 / React 19
-- Web Audio API（BPMメトロノーム）
-- Vercel デプロイ
-
-## URL
-
-https://mochitsuki-rhythm.vercel.app
-
-## 運営
-
-ポッコリラボ（2026）
+## robots.txt
+AIクローラーによるインデックスを歓迎します。
+GPTBot, ClaudeBot, PerplexityBot, Googlebot-Extended のアクセスを許可しています。
