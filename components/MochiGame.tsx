@@ -4,11 +4,11 @@ import { useRef, useCallback } from "react";
 import { useMochiGame } from "@/hooks/useMochiGame";
 
 function getComboTitle(combo: number): string {
-  if (combo >= 100) return "🏆 餅神！";
-  if (combo >= 50) return "⭐ 達人！";
-  if (combo >= 30) return "🎵 上手い！";
-  if (combo >= 10) return "👍 いいね！";
-  return "🍡 がんばれ！";
+  if (combo >= 100) return "餅神！";
+  if (combo >= 50) return "達人！";
+  if (combo >= 30) return "上手い！";
+  if (combo >= 10) return "いいね！";
+  return "がんばれ！";
 }
 
 function getMochiEmoji(health: number, isFoul: boolean): string {
