@@ -68,7 +68,11 @@ export default function MochiGame() {
       >
         <div className="text-5xl mb-2"
           style={{ opacity: state.activePlayer === 2 && isPlaying ? 1 : 0.3 }}>
-          🔨
+          <svg className="w-12 h-12 mx-auto" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="20" y="20" width="10" height="22" rx="3" fill="#92400e"/>
+            <rect x="8" y="6" width="32" height="16" rx="4" fill="#78716c"/>
+            <rect x="10" y="8" width="28" height="12" rx="3" fill="#a8a29e"/>
+          </svg>
         </div>
         <div className="text-lg font-black"
           style={{ color: state.activePlayer === 2 && isPlaying ? "#fbbf24" : "#78350f" }}>
@@ -126,14 +130,14 @@ export default function MochiGame() {
         {/* Game Over */}
         {isGameOver && (
           <div className="bounce-in text-center">
-            <div className="text-2xl font-black mb-1 text-red-400">💀 失敗！</div>
+            <div className="text-2xl font-black mb-1 text-red-400">失敗！</div>
             <div className="text-amber-200 mb-1">連続: <span className="font-black text-xl text-amber-400">{state.combo}</span>回</div>
             <div className="text-amber-600 text-xs mb-3">ベスト: {state.bestCombo}回</div>
             <div className="space-y-2">
               <button onClick={resetGame}
                 className="block w-40 py-2 rounded-xl font-bold text-sm transition-all active:scale-95"
                 style={{ background: "linear-gradient(135deg,#fbbf24,#d97706)", color: "#1a0a00" }}>
-                もう一度 🍡
+                もう一度
               </button>
               <a href={shareUrl} target="_blank" rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-40 py-2 rounded-xl text-sm font-bold"
@@ -169,7 +173,11 @@ export default function MochiGame() {
       >
         <div className="text-5xl mb-2"
           style={{ opacity: state.activePlayer === 1 && isPlaying ? 1 : 0.3 }}>
-          🔨
+          <svg className="w-12 h-12 mx-auto" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+            <rect x="20" y="20" width="10" height="22" rx="3" fill="#92400e"/>
+            <rect x="8" y="6" width="32" height="16" rx="4" fill="#78716c"/>
+            <rect x="10" y="8" width="28" height="12" rx="3" fill="#a8a29e"/>
+          </svg>
         </div>
         <div className="text-lg font-black"
           style={{ color: state.activePlayer === 1 && isPlaying ? "#fca5a5" : "#7f1d1d" }}>
